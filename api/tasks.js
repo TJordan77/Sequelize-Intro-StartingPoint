@@ -73,6 +73,7 @@ router.post("/", async (req,res) =>
     }
     //Removed createTask from the Task.create call. Will cause runtime error, trying to use it before it gets defined.
     const createTask = await Task.create({ title, description, completed });
+    res.status(201).json(createTask); // Forgot to send the resonse back lmao
   }
     catch(error)
   {
