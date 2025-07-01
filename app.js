@@ -15,7 +15,12 @@ app.use(express.json());
 app.use(cors({
   origin: [
     "http://localhost:3000",
+    "https://client-side-routing-frontend-pjo6ulrxf-tjordan77s-projects.vercel.app",
     "https://client-side-routing-frontend-sandy.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  optionsSuccessStatus: 200,
+  credentials: true
   ],
 }));
 
