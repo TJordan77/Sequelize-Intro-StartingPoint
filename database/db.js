@@ -12,6 +12,7 @@ const db = new Sequelize(
         rejectUnauthorized: false,
       logging: false, // comment this line to enable logging
       },
+    },
   }
 );
 
