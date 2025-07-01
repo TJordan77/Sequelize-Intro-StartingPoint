@@ -17,6 +17,7 @@ app.use(cors({
     "http://localhost:3000",
     "https://client-side-routing-frontend-sandy.vercel.app",
     "sequelize-intro-starting-point-git-main-tjordan77s-projects.vercel.app",
+    "sequelize-intro-starting-point-bynticuh9-tjordan77s-projects.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   optionsSuccessStatus: 200,
