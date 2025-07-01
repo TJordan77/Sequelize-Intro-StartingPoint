@@ -12,9 +12,7 @@ const PORT = process.env.PORT || 8080;
 // body parser middleware
 app.use(express.json());
 
-app.use(cors({
-  origin: "https://TJordan77.github.io",
-}));
+app.use(cors());
 
 app.use(morgan("dev")); // logging middleware
 app.use(express.static(path.join(__dirname, "public"))); // serve static files from public folder
