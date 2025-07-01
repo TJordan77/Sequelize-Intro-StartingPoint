@@ -12,7 +12,12 @@ const PORT = process.env.PORT || 8080;
 // body parser middleware
 app.use(express.json());
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "https://client-side-routing-frontend-sandy.vercel.app"
+  ],
+}));
 
 app.use(morgan("dev")); // logging middleware
 app.use(express.static(path.join(__dirname, "public"))); // serve static files from public folder
