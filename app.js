@@ -22,7 +22,6 @@ app.use(cors({
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   optionsSuccessStatus: 200,
   credentials: true
-  ],
 }));
 
 app.use(morgan("dev")); // logging middleware
